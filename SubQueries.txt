@@ -1,0 +1,54 @@
+Q1: Which of the following statements about built-in database functions is correct?
+
+Built-in database functions must be called from a programming language like Python.
+Built-in database functions reduce the amount of data that is retrieved.
+Built-in database functions may increase processing time.
+Built-in database functions may increase network bandwidth consumed.
+
+Correct. Built-in database functions reduce the amount of data that is retrieved.
+Built-in database functions process within the database itself, so the amount of 
+data that is retrieved to the client machine is significantly reduced.
+
+Q2: Which of the following SQL queries would return the day of the week each dog was rescued?
+
+SELECT DAYOFWEEK(RescueDate) From PetRescue WHERE Animal = ‘Dog’;
+SELECT DAY(RescueDate) From PetRescue WHERE Animal = ‘Dog’;
+SELECT DAYOFWEEK(RescueDate) From PetRescue; 
+SELECT RescueDate From PetRescue WHERE Animal = ‘Dog’;
+
+Correct. SELECT DAYOFWEEK(RescueDate) From PetRescue WHERE Animal = ‘Dog’;
+The DAYOFWEEK() function returns the day of the week, and the WHERE clause 
+correctly specifies the animal as a dog.
+
+Q3: What is the result of the following query: SELECT (Current_Date – RescueDate) FROM PetRescue
+
+Returns how long it has been since each rescue.
+Returns the current date and rescue date columns.
+Returns the rescue date for each rescue.
+Returns today’s date.
+
+Correct. Returns how long it has been since each rescue.
+This query returns how long it has been since the rescue.
+
+Q4: Which of the following queries will return the employees who earn less than the 
+average salary?
+
+SELECT * FROM Employees WHERE Salary < (SELECT AVG(Salary))
+SELECT AVG(Salary) FROM Employees WHERE Salary < AVG(Salary) 
+SELECT * FROM Employees WHERE Salary < (SELECT AVG(Salary) FROM Employees);
+SELECT * FROM Employees WHERE Salary < AVG(Salary) 
+
+Correct. SELECT * FROM Employees WHERE Salary < (SELECT AVG(Salary) FROM Employees);
+The AVG(Salary) function must be included in a sub-query within the WHERE clause.
+
+Q5: What are the three ways to work with multiple tables in the same query?
+
+Sub-queries, APPEND, JOIN operators
+Built-in functions, implicit joins, JOIN operators
+Sub-queries, Implicit joins, normalization.
+Sub-queries, Implicit joins, JOIN operators
+
+Correct. Sub-queries, Implicit joins, JOIN operators.
+You can retrieve information from more than one table by using a sub-query, 
+an implicit join, or a JOIN operator like INNER JOIN, LEFT OUTER JOIN, RIGHT OUTER JOIN, 
+or FULL OUTER JOIN.
