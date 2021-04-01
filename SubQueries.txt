@@ -52,3 +52,4 @@ Correct. Sub-queries, Implicit joins, JOIN operators.
 You can retrieve information from more than one table by using a sub-query, 
 an implicit join, or a JOIN operator like INNER JOIN, LEFT OUTER JOIN, RIGHT OUTER JOIN, 
 or FULL OUTER JOIN.
+
